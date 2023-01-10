@@ -56,7 +56,7 @@ export class AppComponent {
       decimalValue,
       hasFractional,
     }) => {
-      this.fractionFormattedValue = this.get32And64Calculation(value, decimalValue, hasFractional)
+      this.fractionFormattedValue = this.get32And64Calculation(value, decimalValue, hasFractional ? '1/8' : '')
     })
   }
 
